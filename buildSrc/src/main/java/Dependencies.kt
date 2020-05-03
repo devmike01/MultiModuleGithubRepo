@@ -12,9 +12,11 @@ object Versions{
     const val espresso_core ="3.2.0"
     const val appcompat_androidx ="1.1.0"
     const val okhttp ="4.6.0"
+    const val gson ="2.8.6"
 }
 
 object Deps{
+    const val gson_lib ="com.google.code.gson:gson:${Versions.gson}"
     const val appcompat_androidx ="androidx.appcompat:appcompat:${Versions.appcompat_androidx}"
     const val espresso_core_test ="androidx.test.espresso:espresso-core:${Versions.espresso_core}"
     const val junit_test ="androidx.test.ext:junit:${Versions.junit_test}"
@@ -41,6 +43,6 @@ object CoreDeps{
 
     fun get() = arrayOf(
         Deps.dagger, Deps.appcompat_androidx,
-        Deps.kotlin_core_ktx
+        Deps.kotlin_core_ktx, Deps.retrofit_gson_converter, Deps.gson_lib
     )
 }

@@ -9,8 +9,8 @@ android{
     defaultConfig {
         minSdkVersion(SdkVersions.min)
         targetSdkVersion(SdkVersions.target)
-        versionCode = 1
-        versionName = "1.0"
+        versionCode = SdkVersions.versionCode
+        versionName =  SdkVersions.versionName
         testInstrumentationRunner = "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
@@ -18,6 +18,7 @@ android{
             isMinifyEnabled = false
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
         }
+
     }
 }
 
